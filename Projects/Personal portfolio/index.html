@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    
+  </head>
+  <body>
+    <canvas id="scribbleCanvas"></canvas>
+
+  
+    <!-- --------------Header-------------- -->
+    <header class="Header">
+      <a href="#" class="Logo"><span>Ganesh Ram</span></a>
+      <ul class="navLinks">
+        <li><a href="#abouts">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <button class="visit-btn"><a href="https://github.com/GaneshramWebDev">Visit GitHub </a></button>
+    </header>
+
+    <!-- --------------About Section-------------- -->
+    <section id="abouts" class="about">
+      <div class="about-container">
+        <img src="./DALL·E 2025-03-07 14.02.39 - A simple and neat cartoon-style illustration of an 18-year-old boy with glasses and a trimmed mustache sitting at a desk, casually writing code on a c.webp" alt=""/>
+        <div class="infoBox">
+          <div class="text">
+            <h3>Hi I'm</h3>
+            <h1>Ganesh Ram</h1>
+            <span>Full Stack Developer</span>
+          </div>
+          <div class="btn-group">
+            <div class="btn" ><a href="./Ganesh  resume.pdf">Download Cv</a></div>
+            <div class="btn">Contact</div>
+          </div>
+
+          <div class="socials">
+           <button class="btn" onclick="changeBg('github')"> <i class="fa-brands fa-github"></i></button>
+           <button class="btn" onclick="changeBg('linkedin')"><i class="fa-brands fa-linkedin"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------Education Section-------------- -->
+    <section class="education" id="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="education-info">
+        <div class="grid">
+          <div class="grid-card">
+            <i class="fa-solid fa-school"></i>
+            <span>Don Bosco Matriculation Higher Secondary School</span>
+            <h3>Year of completion: 2021</h3>
+            <p>Completed Schooling with 78% in 12th standard</p>
+          </div>
+
+          <div class="grid-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Ramakrishna Mission Vivekananda College</span>
+            <h3>Graduated year: 2024</h3>
+            <p>B.Com in Information Systems Management</p>
+          </div>
+
+          <div class="grid-card">
+            <i class="fa-solid fa-laptop"></i>
+            <span>Greens Technology</span>
+            <h3>Full Stack Development Course | 2025</h3>
+            <p>Technologies: MERN Stack, Python (Django)</p>
+          </div>
+
+          <div class="grid-card">
+            <i class="fa-solid fa-code-compare"></i>
+            <span>🚀 Scaler Bootcamp</span>
+            <h3>Full Stack Development Project | 2025</h3>
+            <p>Technologies: MERN Stack</p>
+          </div>
+        </div>
+        <img src="education.jpg" alt="" class="image jpg" />
+      </div>
+    </section>
+
+    <!-- --------------Skills Section-------------- -->
+<section class="skills" id="skills">
+    <h2 class="section-title">🚀 My Tech Stack</h2>
+    <div class="skills-container">
+      
+      <div class="skill-card html">
+        <i class="fa-brands fa-html5" style="color: #e34c26"></i>
+        <span>HTML</span>
+        <p>Structuring the web with semantic markup.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card css">
+        <i class="fa-brands fa-css3-alt" style="color: #264de4"></i>
+        <span>CSS</span>
+        <p>Designing stunning and responsive layouts.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card js">
+        <i class="fa-brands fa-js" style="color: #f7df1e"></i>
+        <span>JavaScript</span>
+        <p>Adding interactivity and dynamic features.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card react">
+        <i class="fa-brands fa-react" style="color: #61dafb"></i>
+        <span>React</span>
+        <p>Building scalable UI with reusable components.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card node">
+        <i class="fa-brands fa-node" style="color: #68a063"></i>
+        <span>Node.js</span>
+        <p>Backend logic & APIs with JavaScript.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card mongodb">
+        <i class="fa-solid fa-database" style="color: #4db33d"></i>
+        <span>MongoDB</span>
+        <p>Scalable NoSQL database for web apps.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card python">
+        <i class="fa-brands fa-python" style="color: #306998"></i>
+        <span>Python</span>
+        <p>Versatile backend development & automation.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card ts">
+        <i class="fa-brands fa-js" style="color: #3178c6"></i>
+        <span>TypeScript</span>
+        <p>Better tooling & type safety in JavaScript.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card express">
+        <i class="fa-solid fa-code-branch" style="color: #999999"></i>
+        <span>Express.js</span>
+        <p>Fast & minimal web framework for Node.js.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+    </div>
+</section>
+
+    <!-- --------------Projects Section-------------- -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">Recent Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+        <img src="./Subtracker.webp" alt="" style="width: 20vw; height: 250px;"/>
+          <h3>Sub tracker</h3>
+          <p>It helps users manage and track recurring subscriptions with ease, it allows seamless API interactions
+          </p>
+          <div class="btn-group">
+            <a href="https://github.com/GaneshramWebDev/Subscription-Tracker"><div class="btn ">Live demo</div></a>
+            <a href="https://github.com/GaneshramWebDev/Subscription-Tracker"><div class="btn">Github Repo</div> </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./Weather app.webp" alt="" style="width: 20vw; height: 250px;"/>
+            <h3>Weather App</h3>
+            <p>A weather app that fetches the weather data from the OpenWeather API and displays it on the frontend.</p>
+            <div class="btn-group">
+             <a href="https://67e3f53172ecae156c2fac00--imaginative-sopapillas-1ccb9b.netlify.app/"> <div class="btn">Live demo</div></a>
+              <a href="https://github.com/GaneshramWebDev/Weather"><div class="btn">Github Repo</div></a>
+            </div>
+          </div>
+
+
+
+          <div class="project-card">
+            <img src="./Handbag.webp" alt="" style="width: 20vw; height: 250px;"/>
+              <h3>Landing Page</h3>
+              <p>A clean and stylish landing page designed to showcase premium handbags. Built with a minimalist UI
+              </p>
+              <div class="btn-group">
+               <a href="https://handbag-landing-page.vercel.app/"><div class="btn">Live demo</div></a>
+                <a href="https://github.com/GaneshramWebDev/Handbag-Landing-page.git"><div class="btn">Github Repo</div></a>
+              </div>
+            </div>
+
+
+        <div class="project-card alif">
+         <img src="./Chat.webp" alt="" style="width: 20vw; height: 250px;"/>
+          <h3>Chat App</h3>
+          <span class="Badge">Work in progress</span>
+          <p>A seamless and responsive chat application for real-time communication</p>
+          <div class="btn-group">
+            <div class="btn not">Working on it</div>
+        
+          </div>
+        </div>
+
+        
+        <div class="project-card alif">
+            <img src="./store.webp" alt="" style="width: 20vw; height: 250px;" />
+            <h3>Store Clone</h3>
+            <span class="Badge">Work in progress</span>
+            <p> A fully functional e-commerce platform inspired by modern online stores</p>
+            <div class="btn-group">
+                <div class="btn not">Working on it</div>
+              
+      </div>
+    </section>
+
+    <!-- --------------Contact Section-------------- -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">📩 Get In Touch</h2>
+        <div class="contact-container">
+          <form action="https://formsubmit.co/YOUR_EMAIL" method="POST" class="contact-form">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html" />
+            <input type="hidden" name="_subject" value="New Contact Form Submission!" />
+            
+            <div class="input-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+      
+            <div class="input-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+      
+            <div class="input-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+      
+            <button type="submit" class="send-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+      
+
+    <!-- --------------Footer-------------- -->
+    <footer>
+      <ul>
+        <li><a href="#abouts">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="copyright">© All rights Reserved | Ganesh Ram</p>
+    </footer>
+
+    
+    <!-- Load JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script src="./index.js"></script>
+
+  </body>
+</html>
